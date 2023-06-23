@@ -1,0 +1,80 @@
+<!DocType html>
+<html>
+ <head>
+ <title>media element</title>
+ <style>
+  .figcaptiondiv{
+    border:1px solid black;
+	background-color: lavender;
+  }
+  .heading{
+   text-align:center;
+   
+  }
+  .picturediv{
+   border:1px solid black;
+   background-color: lavender;
+  
+  }
+  #audiodiv{
+    border:1px solid black;
+	 background-color: lavender;;
+ }
+ .btn{
+    font-size: 18px;
+    text-align: center;
+    background-color: chartreuse;
+ }
+ </style>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+    <body>
+	   <!--figure-->
+	   <div class="figcaptiondiv">
+	      <h2 class="heading">Figcaption</h2>
+	        <figure>
+	            <img src="images/doni.avif" alt="donifile">
+		        <figcaption>Mahendrasing doni</figcaption>
+	        </figure>
+		</div>
+		 <!--source-->
+		<div class="picturediv">
+		   <h2>picture</h2>  
+		       <picture>
+                      <source media="(min-width:650px)" srcset="images/ipl4.jpg" title="2011ipL cup" >
+                      <source media="(min-width:465px)" srcset="images/ipl2.jpg">
+                    <img src="images/ipl3.webp">
+               </picture>
+
+		</div>
+		<!--audio-->
+		   <div id="audiodiv">
+		     <h2>DhoniSPeech</h2>
+		     <audio controls>
+			    <source src="adiofile/adioplay.mp3" type="audio/mp3" title="MS doni speech">
+			 </audio>
+			 <h2>Dhoniplaying vedio</h2>
+			 <video controls>
+			    <source src="veiofile/dhoniplayvedio.mp4" type="video/mp4" width="400px">
+			</video>	
+		   </div>
+		   <div class="figcaptiondiv">
+		         <label for="YourLevel">Public supportLevel</label>
+		           <progress id="YourLevel" min="0"max="100" value="70" target="dhonipublisuppoet"></progress>
+			<!--iframe-->
+			   <h2>DoniHome</h2>
+			     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14651.551104919698!2d85.3016154!3d23.35608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e1707cacbd55%3A0xdd95be90cef65e02!2sMS%20Dhoni%20House!5e0!3m2!1sen!2sin!4v1686736185640!5m2!1sen!2sin"
+			      width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			 
+		   </div>
+		  
+		       <iframe name="ifa" height="300px" width="50%" title="Iframe Example"></iframe>
+
+               <p><a href="https://www.w3schools.com" target="ifa">W3Schools.com</a></p>
+			   <a href="https://10fastfingers.com/typing-test/english" target="ifa">typing</a>
+			   <button class="btn">Send the location</button>
+    </body>
+  
+</html>
